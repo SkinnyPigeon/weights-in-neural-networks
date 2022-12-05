@@ -7,6 +7,6 @@ RUN python3.8 -m pip install --upgrade pip
 RUN python3.8 -m pip install tensorflow
 RUN python3.8 -m pip uninstall tensorflow-io
 RUN python3.8 -m pip install --no-deps tensorflow-io
-RUN python3.8 -m pip install numpy pandas scikit-learn matplotlib scipy jupyter
+RUN python3.8 -m pip install numpy pandas scikit-learn matplotlib scipy jupyter python-Levenshtein
 COPY notebooks/ notebooks
 CMD ["jupyter", "notebook", "--ip='*'", "--allow-root", "--no-browser", "--NotebookApp.token=''", "--NotebookApp.password=''", "--notebook-dir=/notebooks"]
