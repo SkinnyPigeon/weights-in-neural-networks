@@ -11,16 +11,26 @@
       <li><a href="./complete-example.html">02 Complete</a></li>
       <li><a href="./one-value-one-noise.html">03 One Value</a></li>
       <li><a href="./classification.html">04 Classification</a></li>
-      <li><a href="./titanic.html">05 Titanic</a></li>
+      <li class="parent">
+        <a href="./titanic.html">05 Titanic</a>
+        <ul class="dropdown">
+          <li><a href="#random">Random Forest</a></li>
+          <li><a href="#neural">Neural Network</a></li>
+          <li><a href="#subsection">Comparison</a></li>
+        </ul>
+      </li>
+      <li><a href="./accuracy.html">06 Accuracy</a></li>
     </ul>
 </header> 
 
 <style type="text/css">
   ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+ 
 
 
   h2,
@@ -94,6 +104,16 @@
       justify-content: space-between;
     }
 
+  }
+
+  .parent ul {
+    display: none;
+  }
+
+  .parent:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #f4f5f4;
   }
 
 </style>
@@ -14769,7 +14789,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15366,6 +15385,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
+<a id="random"></a>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Random-Forest">Random Forest<a class="anchor-link" href="#Random-Forest">&#182;</a></h2><p>This section runs the Random Forest algorithm against the data. One of the nice features of this particular type of algorithm is that the feature importance is generated as it runs. We will make a direct comparison of this output later in the notebook</p>
@@ -15499,6 +15519,7 @@ jp-needs-light-background
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
+<a id="neural"></a>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Defining-and-Running-the-Neural-Network-Model">Defining and Running the Neural Network Model<a class="anchor-link" href="#Defining-and-Running-the-Neural-Network-Model">&#182;</a></h2><p>Now we turn our attention to the neural network. The setup is the same as has been seen in previous notebooks and we are using exactly the same data set as was used for the Random Forest</p>
@@ -16998,6 +17019,7 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<a id="comparison"></a>
 <h2 id="Comparing-Random-Forest-Feature-Importance-vs-Neural-Network-Feature-Importance">Comparing Random Forest Feature Importance vs Neural Network Feature Importance<a class="anchor-link" href="#Comparing-Random-Forest-Feature-Importance-vs-Neural-Network-Feature-Importance">&#182;</a></h2>
 </div>
 </div>
