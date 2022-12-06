@@ -8,19 +8,59 @@
 <header class="header">
   <h1 class="logo"><a href="./index.html">Feature Importance in Neural Networks</a></h1>
     <ul class="main-nav">
+      
       <li><a href="./index.html">01 Overview</a></li>
-      <li><a href="./complete-example.html">02 Complete</a></li>
-      <li><a href="./one-value-one-noise.html">03 One Value</a></li>
-      <li><a href="./classification.html">04 Classification</a></li>
+      
       <li class="parent">
-        <a href="./titanic.html">05 Titanic</a>
-        <ul class="dropdown">
-          <li><a href="#random">Random Forest</a></li>
-          <li><a href="#neural">Neural Network</a></li>
-          <li><a href="#subsection">Comparison</a></li>
+        <a href="./complete-example.html">02 Complete</a>
+        <ul>
+          <li><a href="./complete-example.html#data">Generating Data</a></li>
+          <li><a href="./complete-example.html#model">Defining Model</a></li>
+          <li><a href="./complete-example.html#evaluating">Evaluating Model</a></li>
+          <li><a href="./complete-example.html#animated">Animated Bar Graph</a></li>
+          <li><a href="./complete-example.html#box">Box Plot</a></li>
+          <li><a href="./complete-example.html#standard">Standard Deviation</a></li>
+          <li><a href="./complete-example.html#scatter">Scatter Plots</a></li>
+          <li><a href="./complete-example.html#probability">Probability Density</a></li>
+          <li><a href="./complete-example.html#importance">Feature Importance</a></li>
         </ul>
       </li>
-      <li><a href="./accuracy.html">06 Accuracy</a></li>
+
+      <li class="parent">
+        <a href="./one-value-one-noise.html">03 One Value</a>
+        <ul>
+          <li><a href="./one-value-one-noise.html#box">Box Plot</a></li>
+          <li><a href="./one-value-one-noise.html#probability">Probability Density</a></li>
+          <li><a href="./one-value-one-noise.html#importance">Feature Importance</a></li>
+        </ul>
+      </li>
+      
+      <li class="parent">
+        <a href="./classification.html">04 Classification</a>
+        <ul>
+          <li><a href="./classification.html#box">Box Plot</a></li>
+          <li><a href="./classification.html#probability">Probability Density</a></li>
+          <li><a href="./classification.html#importance">Feature Importance</a></li>
+        </ul>
+      </li>
+
+      <li class="parent">
+        <a href="./titanic.html">05 Titanic</a>
+        <ul>
+          <li><a href="./titanic.html#random">Random Forest</a></li>
+          <li><a href="./titanic.html#neural">Neural Network</a></li>
+          <li><a href="./titanic.html#subsection">Comparison</a></li>
+        </ul>
+      </li>
+
+      <li class="parent">
+        <a href="./accuracy.html">06 Accuracy</a>
+        <ul>
+          <li><a href="./accuracy.html#res1">Dataset 1 Results</a></li>
+          <li><a href="./accuracy.html#res2">Dataset 2 Results</a></li>
+          <li><a href="./accuracy.html#res3">Dataset 3 Results</a></li>
+        </ul>
+      </li>
     </ul>
 </header> 
 
@@ -72,6 +112,7 @@
 
 
   .header {
+    position: static;
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #e0e0e0;
@@ -115,6 +156,9 @@
     display: block;
     position: absolute;
     background-color: #f4f5f4;
+    border-radius: 5px;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
   }
 
 </style>
