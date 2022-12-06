@@ -14671,7 +14671,58 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Hello">Hello<a class="anchor-link" href="#Hello">&#182;</a></h1>
+<h1 id="Feature-Importance-in-Neural-Networks">Feature Importance in Neural Networks<a class="anchor-link" href="#Feature-Importance-in-Neural-Networks">&#182;</a></h1><p>This site is a companion to the final report on Feature Importance in Neural Networks.</p>
+<p>The goal of this research was to determine whether the changing values of the weights found between the input layer and first hidden layer of a neural network whilst training could determine feature importance. TL;DR, they can.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Structure-of-Site">Structure of Site<a class="anchor-link" href="#Structure-of-Site">&#182;</a></h2><p>This site contains exported copies of the notebooks used during the investigation. The following gives a brief overview of each notebook:</p>
+<ol>
+<li>Overview - Some background details about the site and the work leading to its creation</li>
+<li>Complete - An end-to-end look at the exploritory work that took place leading up to the use of Probability Density functions to determine the order of feature importance</li>
+<li>One Value, One Noise - A comparison of the previous example which attempts to see whether noise is completely cancelled out when there are just two features</li>
+<li>Classification - So far each example has been for a linear regression whereas this uses a classification example to examine the effect on the outputs</li>
+<li>Titanic - An extension of the Classification example, this time using the ubiquitous Titanic data set. Importantly, it compares the results to a Random Forest classifier which has an inbuilt feature importance method</li>
+<li>Accuracy - A look at how accuracy effects the efficacy of the methodology</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Methodology">Methodology<a class="anchor-link" href="#Methodology">&#182;</a></h2><p>The idea was to provide a proof of concept and as such <em>perfect</em> data was used throughout the development. By which it is meant that sythetic data was used throughout, with the exception of the <a href="./titanic.html">Titanic</a> classification page.</p>
+<p>Specifically, the data followed the equation $y = mx + c$ where <strong>m</strong> and <strong>c</strong> were static values and <strong>x</strong> was randomly selected. In addition to these values, an additional <strong>noise</strong> column was added to give the neural networks a target to tune out. The hypothesis was that the methedology would rank from most to leaast importance the columns in the following order:</p>
+<ol>
+<li><strong>x</strong> - Since this value has the single largest effect on the result, it should be clearly selected as the most important</li>
+<li><strong>m/c</strong> - Since these are static, they should be roughly equally weighted in the overall system</li>
+<li><strong>noise</strong> - Since this has no effect on the output, it should be clearly ranked lowest in importance</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
 </div>
 </div>
 </div>
